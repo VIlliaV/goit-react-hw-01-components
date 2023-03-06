@@ -1,8 +1,11 @@
-import { Profile } from "./Profile/Profile";
+import friends from '../data/friends.json';
 import user from '../data/user.json';
-import stats from '../data/data.json'
-import { Statistics } from "./Statistics/Statistics";
-
+import stats from '../data/data.json';
+import items from '../data/transactions.json';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 export const App = () => {
   return (
     <div
@@ -12,17 +15,19 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-<Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar} 
-  stats={user.stats}
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
       />
-     <Statistics stats={stats} />
+      <Statistics stats={stats} />
+      <FriendList friends={friends}></FriendList>
+      <TransactionHistory items={items}></TransactionHistory>
     </div>
   );
 };
