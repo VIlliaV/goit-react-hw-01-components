@@ -4,7 +4,7 @@ export const Item = styled.li`
    {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
+    width: 250px;
     padding: 5px;
     margin: 5px;
     font-size: 30px;

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  width-min: 250px;
+  width: 250px;
+  margin: 5px;
   font-size: 24px;
   text-align: center;
   background-color: #f3ebeb;
