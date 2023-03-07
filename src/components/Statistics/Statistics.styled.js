@@ -12,7 +12,8 @@ export const Section = styled.section`
     border: 1px solid black;
     & .item {
       display: flex;
-      width: 100%;
+      width: 50px;
+      padding: 7px;
       flex-direction: column;
       font-size: 12px;
       border: 1px solid black;

@@ -10,13 +10,12 @@ export const FriendList = ({ friends }) => (
         isOnline,
         id,
       }) => (
-        <li key={id}>
-          <FriendListItem
-            avatar={avatar}
-            name={name}
-            isOnline={isOnline}
-          ></FriendListItem>
-        </li>
+        <FriendListItem
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+          key={id}
+        ></FriendListItem>
       )
     )}
   </ul>

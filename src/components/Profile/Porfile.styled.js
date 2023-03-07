@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width-min: 250px;
   font-size: 30px;
   text-align: center;
   background-color: #f3ebeb;
