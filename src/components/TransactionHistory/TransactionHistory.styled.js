@@ -15,11 +15,18 @@ export const Table = styled.table`
   }
   & tbody {
     color: #3b3838;
+
     & td {
       padding: 5px 50px;
     }
+
     & tr:nth-last-child(even) {
       background-color: #e6e5e5;
+    }
+    & tr {
+      &:hover {
+        background-color: yellow;
+      }
     }
   }
 `;

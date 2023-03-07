@@ -16,6 +16,9 @@ export const Container = styled.div`
     margin: 30px auto;
     border: 2px solid black;
     border-radius: 50%;
+    &:hover {
+      scale: 1.5;
+    }
   }
   & .description {
     padding: 5px;
@@ -32,6 +35,10 @@ export const Container = styled.div`
     background-color: #cec6c6;
 
     & li {
+      &:hover {
+        scale: 1.5;
+        background-color: #f3ebeb;
+      }
       display: flex;
       width: 100%;
       padding: 3px;

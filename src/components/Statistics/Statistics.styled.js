@@ -11,6 +11,7 @@ export const Section = styled.section`
     justify-content: space-around;
     background-color: #cec6c6;
     border: 1px solid black;
+
     & .item {
       display: flex;
       width: 50px;
@@ -19,6 +20,9 @@ export const Section = styled.section`
       font-size: 12px;
       border: 1px solid black;
       color: white;
+      &:hover {
+        color: black;
+      }
       & .percentage {
         font-size: 16px;
         font-weight: bold;

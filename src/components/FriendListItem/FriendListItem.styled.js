@@ -10,6 +10,10 @@ export const Item = styled.li`
     font-size: 30px;
     box-shadow: 5px 5px 10px grey;
     gap: 10px;
+    &:hover {
+      box-shadow: 7px 7px 20px black;
+    }
+
     & .status {
       width: 20px;
       height: 20px;
