@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-
+import {Container} from './Porfile.styled';
+  
 export const Profile = ({
   username,
   tag,
@@ -7,7 +8,7 @@ export const Profile = ({
   avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
   stats,
 }) => (
-  <div className="profile">
+  <Container className="profile">
     <div className="description">
       <img src={avatar} alt={username + ' avatar'} className="avatar" />
       <p className="name">{username}</p>
@@ -29,7 +30,7 @@ export const Profile = ({
         <span className="quantity">{stats.followers}</span>
       </li>
     </ul>
-  </div>
+  </Container>
 );
 
 Profile.propTypes = {
