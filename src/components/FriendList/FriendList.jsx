@@ -15,7 +15,7 @@ export const FriendList = ({ friends }) => (
           name={name}
           isOnline={isOnline}
           key={id}
-        ></FriendListItem>
+        />
       )
     )}
   </ul>
@@ -28,6 +28,6 @@ FriendList.propTypes = {
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       id: PropTypes.number.isRequired,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };

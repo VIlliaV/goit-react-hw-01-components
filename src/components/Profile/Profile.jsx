@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import {Container} from './Porfile.styled';
-  
+import { Container } from './Porfile.styled';
+
 export const Profile = ({
   username,
   tag,
   location,
   avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
-  stats,
+  stats: { followers, views, likes },
 }) => (
   <Container className="profile">
     <div className="description">
@@ -15,19 +15,18 @@ export const Profile = ({
       <p className="tag">@{tag}</p>
       <p className="location">{location}</p>
     </div>
-
     <ul className="stats">
       <li>
         <span className="label">Followers</span>
-        <span className="quantity">{stats.followers}</span>
+        <span className="quantity">{followers}</span>
       </li>
       <li>
         <span className="label">Views</span>
-        <span className="quantity">{stats.views}</span>
+        <span className="quantity">{views}</span>
       </li>
       <li>
         <span className="label">Likes</span>
-        <span className="quantity">{stats.followers}</span>
+        <span className="quantity">{likes}</span>
       </li>
     </ul>
   </Container>
@@ -42,5 +41,5 @@ Profile.propTypes = {
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };
